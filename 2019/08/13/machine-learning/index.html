@@ -79,13 +79,30 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="yyyeuing&#39;s blog">
-<meta property="og:url" content="https://yyyeuing.top/index.html">
+<meta name="description" content="注意力模型（Attention Model）近年来被广泛的应用到NLP，图像识别，语音识别等不同程度的深度学习中。 Encoder-Decoder框架对于句子&amp;lt;Source,Target&amp;gt;,我们的目标是给定输入句子Source,期待通过Encoder-Decoder框架来生成目标句子Target.Source和Target可以是同一种语言，也可以是不同的语言。Source和Target">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Attention-深度学习中的注意力机制">
+<meta property="og:url" content="https://yyyeuing.top/2019/08/13/machine-learning/index.html">
 <meta property="og:site_name" content="yyyeuing&#39;s blog">
+<meta property="og:description" content="注意力模型（Attention Model）近年来被广泛的应用到NLP，图像识别，语音识别等不同程度的深度学习中。 Encoder-Decoder框架对于句子&amp;lt;Source,Target&amp;gt;,我们的目标是给定输入句子Source,期待通过Encoder-Decoder框架来生成目标句子Target.Source和Target可以是同一种语言，也可以是不同的语言。Source和Target">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/one.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/one-1.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/one-2.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-1.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-2.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-3.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-4.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-5.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-6.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-7.jpg">
+<meta property="og:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/two-8.jpg">
+<meta property="og:updated_time" content="2019-08-13T14:49:26.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yyyeuing&#39;s blog">
+<meta name="twitter:title" content="Attention-深度学习中的注意力机制">
+<meta name="twitter:description" content="注意力模型（Attention Model）近年来被广泛的应用到NLP，图像识别，语音识别等不同程度的深度学习中。 Encoder-Decoder框架对于句子&amp;lt;Source,Target&amp;gt;,我们的目标是给定输入句子Source,期待通过Encoder-Decoder框架来生成目标句子Target.Source和Target可以是同一种语言，也可以是不同的语言。Source和Target">
+<meta name="twitter:image" content="https://yyyeuing.top/2019/08/13/machine-learning/machine-learning/one.jpg">
 
 
 
@@ -115,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="https://yyyeuing.top/">
+  <link rel="canonical" href="https://yyyeuing.top/2019/08/13/machine-learning/">
 
 
 
 
 
-  <title>yyyeuing's blog</title>
+  <title>Attention-深度学习中的注意力机制 | yyyeuing's blog</title>
   
 
 
@@ -140,8 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,9 +292,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -308,9 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/yyyeuing.github.io/2019/08/13/machine-learning/" itemprop="url">Attention-深度学习中的注意力机制</a></h1>
+          <h1 class="post-title" itemprop="name headline">Attention-深度学习中的注意力机制</h1>
         
 
         <div class="post-meta">
@@ -392,22 +406,54 @@
       
 
       
-        
-          
-          注意力模型（Attention Model）近年来被广泛的应用到NLP，图像识别，语音识别等不同程度的深度学习中。
-Encoder-Decoder框架对于句子&lt;Source,Target&gt;,我们的目标是给定输入句子Source,期待通过Encoder-Decoder框架来生成目标句子Ta
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/yyyeuing.github.io/2019/08/13/machine-learning/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>注意力模型（Attention Model）近年来被广泛的应用到NLP，图像识别，语音识别等不同程度的深度学习中。</p>
+<h2 id="Encoder-Decoder框架"><a href="#Encoder-Decoder框架" class="headerlink" title="Encoder-Decoder框架"></a>Encoder-Decoder框架</h2><p><img src="machine-learning/one.jpg" alt><br>对于句子&lt;Source,Target&gt;,我们的目标是给定输入句子Source,期待通过Encoder-Decoder框架来生成目标句子Target.Source和Target可以是同一种语言，也可以是不同的语言。Source和Target分别由各自的单词序列构成。<br><img src="machine-learning/one-1.jpg" alt></p>
+<ul>
+<li>Encoder就是对输入的句子进行编码，将输入句子通过非线性变换转换为中间语义表示C。</li>
+<li>Decoder就是根据句子的中间语义表示C和之前已经生成的历史信息y1,y2……yi来生成i时刻要生成的单词yi;<br><img src="machine-learning/one-2.jpg" alt><br><strong>缺点</strong>：在生成目标句子的单词是，不论生成哪个单词，它们使用的输入句子Source的语义编码C都是一样的。这说明Source中任意单词对生成某个目标单词yi来说影响力都是相同的。相当于人眼看到画面眼中却没有焦点。<br>举个栗子：<br>如果将“我爱中国”这四个字翻译成英文，即“I love China”。用Encoder-Decoder框架逐步生成英文单词：“I”,“love”，“China”。在翻译“China”这个英文单词的时候，分心模型（Encoder-Decoder）里面每个中文单词对于翻译目标单词“China”贡献相同。</li>
+</ul>
+<h1 id="Attention模型"><a href="#Attention模型" class="headerlink" title="Attention模型"></a>Attention模型</h1><h2 id="Soft-Attention模型"><a href="#Soft-Attention模型" class="headerlink" title="Soft Attention模型"></a>Soft Attention模型</h2><p>针对上述栗子，如果引入Attention模型的话，在翻译“China”的时候，会体现中文单词对于翻译当前英文单词不同的影响程度，类似于给出一个概率分布值：<br>（我：0.3）（爱：0.2）（中国：0.5）<br>每个中文词组的概率代表了翻译当前单词“China”时，注意力分配模型分配给不同英文单词的注意力大小。<br><img src="machine-learning/two.jpg" alt><br>Attention模型的关键在于：由固定的中间语义表示C换成了根据当前输出单词来调整成加入注意力模型的变化的Ci。<br>生成目标句子单词的过程变成下面形式：<br><img src="machine-learning/two-1.jpg" alt><br>那么生成目标句子某个单词，比如“China”的时候，如何知道Attention模型所需要的输入句子单词注意力分配概率分布值呢？？？为了方便解释，我们再次将上述的分心模型拿来，不过这次我们用RNN模型来代替它的Encoder和Decoder。<br><img src="machine-learning/two-2.jpg" alt><br>那么下图👇就可以解释了<br><img src="machine-learning/two-3.jpg" alt><br><strong><em>Attention机制的本质思想</em></strong><br>我们将Attention机制从上面的Encoder-Decoder框架中剥离。将Source中的构成元素想象成是由一系列&lt;Key,Value&gt;数据对构成，此时给定Target中的某个元素Query，通过计算Query和各个Key的相似性或者相关性，得到每个Key对应Value的权重系数，然后对Value进行加权求和，即得到了最终的Attention数值。所以本质上<font color="red">Attention机制是对Source中元素的Value值进行加权求和，而Query和key用来计算对应Value的权重系数</font>。可表达为以下公式👇<br><img src="machine-learning/two-4.jpg" alt><br><strong><em>Attention机制的具体计算过程</em></strong>   </p>
+<ul>
+<li>阶段一：根据Query和Key计算两者的相似性或者相关性；</li>
+<li>阶段二：对第一阶段的原始分值进行归一化处理</li>
+<li>阶段三：根据权重系数对Value进行加权求和<br>具体表现参考下图<br><img src="machine-learning/two-5.jpg" alt><br>其中，第一阶段常见的方法有三种：求两者间的向量点积，求两者的向量Cosine相似性或者通过再引入额外的神经网络来求值。<br><img src="machine-learning/two-6.jpg" alt><br>第二阶段引入SoftMax。一方面可进行归一化，将原始计算分值整理成所有元素权重之和为1的概率分布；另一方面也可以通过SoftMax的内在机制更加突出重要元素的权重。<br><img src="machine-learning/two-7.jpg" alt><br>第二阶段计算结果ai就是Value对应的权重系数，然后进行加权求和就可以得到Attention的数值。<br><img src="machine-learning/two-8.jpg" alt>  <h2 id="Multi-Head-Attention"><a href="#Multi-Head-Attention" class="headerlink" title="Multi-Head Attention"></a>Multi-Head Attention</h2>Google提出的新概念，是Attention机制的完善。通过把Query,Key,Value通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，最后将结果拼接起来。 <h2 id="Self-Attention模型"><a href="#Self-Attention模型" class="headerlink" title="Self Attention模型"></a>Self Attention模型</h2>Attention机制发生在Target的元素Query和Source中所有元素之间。而Self Attention指的是Source内部元素之间或者Target内部元素之间发生的Attention机制，可以理解为Target=Source这种特殊情况下的注意力机制。<br>Self Attention可以捕获同一个句子中单词之间的一些句法特征或者语义特征，会更容易捕获句子中长距离的相互依赖的特征。</li>
+</ul>
+
       
     </div>
 <div>  
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/yyyeuing.github.io/2019/08/13/machine-learning/">Attention-深度学习中的注意力机制</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 yyyeuing 的个人博客">yyyeuing</a></p>
+  <p><span>发布时间:</span>2019年08月13日 - 13:57</p>
+  <p><span>最后更新:</span>2019年08月13日 - 22:49</p>
+<p><span>原始链接:</span><a href="/yyyeuing.github.io/2019/08/13/machine-learning/" title="Attention-深度学习中的注意力机制">https://yyyeuing.top/2019/08/13/machine-learning/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://yyyeuing.top/2019/08/13/machine-learning/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"><i class="fa fa-creative-commons"></i>BY-NC-SA </a>许可协议。转载请注明出处!</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
+
+
       
 </div>
     
@@ -424,173 +470,28 @@ Encoder-Decoder框架对于句子&lt;Source,Target&gt;,我们的目标是给定�
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yyyeuing.top/yyyeuing.github.io/2019/08/08/happy-August/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yyyeuing">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/yyyeuing.github.io/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yyyeuing's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/yyyeuing.github.io/2019/08/08/happy-August/" itemprop="url">flag不倒</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-08T14:53:21+08:00">
-                2019-08-08
-              </time>
+              <a href="/yyyeuing.github.io/2019/08/08/happy-August/" rel="next" title="flag不倒">
+                <i class="fa fa-chevron-left"></i> flag不倒
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/yyyeuing.github.io/categories/杂文/" itemprop="url" rel="index">
-                    <span itemprop="name">杂文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/yyyeuing.github.io/2019/08/08/happy-August/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/yyyeuing.github.io/2019/08/08/happy-August/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          整理文件的时候，看见了尘封已久的播客，想了想还是打开了自己的播客，想起自己曾经一个人学习搭建播客，遇到过无数的问题，想找人请教却是不知找谁，只能自己苦苦研究。当自己的播客终于可以正常运行的时候，自己又有了新的事情需要去做，就把播客扔在了一边，现在再次看到，不免有点小感慨。六月和七月是我最忙碌的两个月
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/yyyeuing.github.io/2019/08/08/happy-August/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-<div>  
-      
-</div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -600,10 +501,11 @@ Encoder-Decoder框架对于句子&lt;Source,Target&gt;,我们的目标是给定�
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -611,6 +513,13 @@ Encoder-Decoder框架对于句子&lt;Source,Target&gt;,我们的目标是给定�
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -631,8 +540,17 @@ Encoder-Decoder框架对于句子&lt;Source,Target&gt;,我们的目标是给定�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -695,6 +613,22 @@ Encoder-Decoder框架对于句子&lt;Source,Target&gt;,我们的目标是给定�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Encoder-Decoder框架"><span class="nav-number">1.</span> <span class="nav-text">Encoder-Decoder框架</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Attention模型"><span class="nav-number"></span> <span class="nav-text">Attention模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Soft-Attention模型"><span class="nav-number">1.</span> <span class="nav-text">Soft Attention模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multi-Head-Attention"><span class="nav-number">2.</span> <span class="nav-text">Multi-Head Attention</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Self-Attention模型"><span class="nav-number">3.</span> <span class="nav-text">Self Attention模型</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -835,6 +769,10 @@ Encoder-Decoder框架对于句子&lt;Source,Target&gt;,我们的目标是给定�
 
 
   
+  <script type="text/javascript" src="/yyyeuing.github.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/yyyeuing.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
