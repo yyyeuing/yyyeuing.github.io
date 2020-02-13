@@ -1,35 +1,102 @@
-<!doctype html>
-<html lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-<meta charset="utf-8">
-<title>article - yyyeuing's blog</title>
-<base href="/yyyeuing.github.io/">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="https://yyyeuing.top/2020/02/13/article/">
-<link rel="icon" type="image/x-icon" href="/yyyeuing.github.io/favicon.ico">
+extends includes/layout.pug
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="article">
-<meta property="og:url" content="https://yyyeuing.top/2020/02/13/article/index.html">
-<meta property="og:site_name" content="yyyeuing&#39;s blog">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://s2.ax1x.com/2020/02/13/1qtzCQ.jpg">
-<meta property="og:updated_time" content="2020-02-13T03:30:35.025Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="article">
-<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/13/1qtzCQ.jpg">
+block top_img
+  - var top_img =  page.top_img || page.cover || theme.post_meta.top_img || theme.default_top_img
+  - var bg_img = top_img !== true ? `background-image: url(${top_img})` : ''
+  div#top-container(style=bg_img)
+    #post-info
+      #post-title
+          .posttitle= page.title || _p('no_title')
+      #post-meta
+        if (theme.post_meta.date_type)
+          if (theme.post_meta.date_type === 'both')
+            time.post-meta__date
+              i.fa.fa-calendar.fa-fw(aria-hidden="true")
+              =' '+_p('post.created')+' '+date(page.date, config.date_format)
+              span.post-meta__separator |
+              i.fa.fa-history.fa-fw(aria-hidden="true")
+              =' '+_p('post.updated')+' '+date(page.updated, config.date_format)
+          else
+            - var date_type = theme.post_meta.date_type === 'updated' ? 'updated' : 'date'
+            time.post-meta__date #[i.fa.fa-calendar.fa-fw(aria-hidden="true")] #[=date(page[date_type], config.date_format)]
+                  
+        if (theme.post_meta.categories && page.categories.data.length > 0)
+          if (theme.post_meta.date_type)
+            span.post-meta__separator |
+          span
+            each item, index in page.categories.data
+              i.fa.fa-inbox.post-meta__icon.fa-fw(aria-hidden="true")
+              a(href=url_for(item.path)).post-meta__categories #[=item.name]
+              if (index < page.categories.data.length - 1)
+                i.fa.fa-angle-right.fa-fw(aria-hidden="true")
+        .post-meta-wordcount
+          if (theme.wordcount && theme.wordcount.enable)
+            i.fa.fa-file-word-o.post-meta__icon.fa-fw(aria-hidden="true")
+            span= _p('post.wordcount') + ':'
+            span.word-count= wordcount(page.content)
+            span.post-meta__separator |
+            i.fa.fa-clock-o.post-meta__icon.fa-fw(aria-hidden="true")
+            span= _p('post.min2read', min2read(page.content, {cn: 350, en: 160}))
+          .post-meta-pv-cv
+            if (theme.wordcount && theme.wordcount.enable && theme.busuanzi.page_pv)
+              span.post-meta__separator |
+            if theme.busuanzi.page_pv       
+              span
+                i.fa.fa-eye.post-meta__icon.fa-fw(aria-hidden="true") 
+                =_p('post.page_pv') + ':'
+              span#busuanzi_value_page_pv
+            if (theme.disqus && theme.disqus.enable && theme.disqus.count && page.comments !== false)
+              if (theme.busuanzi && theme.busuanzi.page_pv)
+                span.post-meta__separator |
+              i.fa.fa-comment-o.post-meta__icon.fa-fw(aria-hidden="true")
+              span= _p('post.comments') + ':'
+              a(href=url_for(page.path) + '#post-comment')
+                span.disqus-comment-count(data-disqus-url=page.permalink)
+            if (theme.valine && theme.valine.enable && theme.valine.count && page.comments !== false)
+              if (theme.busuanzi && theme.busuanzi.page_pv)
+                span.post-meta__separator |
+              i.fa.fa-comments-o.post-meta__icon.fa-fw(aria-hidden="true")
+              span= _p('post.comments') + ':'
+              a(href=url_for(page.path) + '#post-comment' itemprop="discussionUrl")
+                span.valine-comment-count.comment-count(data-xid=url_for(page.path) itemprop="commentCount")
+            if (theme.gitalk && theme.gitalk.enable && theme.gitalk.count && page.comments !== false)
+              if (theme.busuanzi && theme.busuanzi.page_pv)
+                span.post-meta__separator |
+              i.fa.fa-comments-o.post-meta__icon.fa-fw(aria-hidden="true")
+              span= _p('post.comments') + ':'
+              a(href=url_for(page.path) + '#post-comment')
+                span.gitalk-comment-count.comment-count
 
 
-<link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
-<link href="/yyyeuing.github.io/styles.d6ae91d5e735d1cc1e8c.css" rel="stylesheet">
-<link rel="stylesheet" href="/yyyeuing.github.io/theme.bc78bd5649d5382c09e2.css">
-<script src="/yyyeuing.github.io/config.d1372e05c448a8de4aae.js"></script>
-
-</head>
-<body lang="zh-Hans">
-<is-a></is-a>
-<script src="/yyyeuing.github.io/runtime.1720a40670866f12654e.js"></script>
-<script src="/yyyeuing.github.io/polyfills.69a7b8a907a7ac9da988.js"></script>
-<script src="/yyyeuing.github.io/main.afaf3882c4354b8bfcf3.js"></script>
-</body>
-</html>
+block content
+  article#post(class="")
+    #post-content.article-container!= page.content
+  if (theme.post_copyright && theme.post_copyright.enable && page.copyright != false)
+    .post-copyright
+      .post-copyright__author
+        span.post-copyright-meta= _p('post.copyright.author') + ": "
+        span.post-copyright-info
+          a(href=`mailto:${config.email}`) #[=config.author]
+      .post-copyright__type
+        span.post-copyright-meta= _p('post.copyright.link') + ": "
+        span.post-copyright-info
+          a(href=url_for(page.permalink)) #[=page.permalink]
+      .post-copyright__notice
+        span.post-copyright-meta= _p('post.copyright.copyright_notice') + ": "
+        span.post-copyright-info!= _p('post.copyright.copyright_content', theme.post_copyright.license_url, theme.post_copyright.license, config.url, config.title)
+  
+  .tag_share
+    if (theme.post_meta.tags)
+      .post-meta__tag-list
+        each item, index in page.tags.data
+          a(href=url_for(item.path)).post-meta__tags #[=item.name]    
+    include includes/share/index.pug
+        
+  if theme.reward.enable
+    include includes/reward.pug
+  include includes/pagination.pug
+  
+  if theme.related_post && theme.related_post.enable
+    != related_posts(page,site.posts)
+  if page.comments !== false
+    include includes/comments/index.pug
