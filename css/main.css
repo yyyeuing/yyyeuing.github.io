@@ -1851,7 +1851,7 @@ a:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4b1cfe;
+  background: #da7dcb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3053,6 +3053,9 @@ hr {
 .post-toc ol a {
   color: #000;
 }
+img.img-topic {
+  width: 100%;
+}
 .post-body {
   text-align: justify;
 }
@@ -3092,7 +3095,7 @@ a:hover {
   -webkit-box-shadow: #666 0px 0px 10px;
   -moz-box-shadow: #666 0px 0px 10px;
   box-shadow: #666 0px 0px 10px;
-  background: #f3f2ee;
+  background: #f9f9f9;
 /*background: #fff;*/
   behavior: url("/images/PIE.htc");
 /*border: 1px solid rgba(128, 128, 128, 0.4);*/
