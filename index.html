@@ -2,17 +2,24 @@
 
 
 
-  
 
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
+  <meta name="google-site-verification" content="-YPbgjltFVFljoCm04Ktk0m38A8CkQxpifuKVZXtawA">
+  <mate name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/yyyeuing.github.io/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/yyyeuing.github.io/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -45,6 +52,32 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -53,26 +86,28 @@
 <link href="/yyyeuing.github.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/yyyeuing.github.io/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/yyyeuing.github.io/images/site-logo.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/yyyeuing.github.io/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/yyyeuing.github.io/images/site-logo.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/yyyeuing.github.io/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/yyyeuing.github.io/images/site-logo.png?v=5.1.4">
 
 
-  <link rel="mask-icon" href="/yyyeuing.github.io/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
+  <link rel="mask-icon" href="/yyyeuing.github.io/images/site-logo.png?v=5.1.4" color="#222">
 
 
 
 
+
+  <meta name="keywords" content="Java,hexo,next,个人博客,博客,编程,IT,CSS,javascript,前端,后端,web开发">
+
+
+
+
+
+  <link rel="alternate" href="https://bestzuo.cn/atom.xml" title="养生少女不熬叶" type="application/atom+xml">
 
 
 
@@ -93,12 +128,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/yyyeuing.github.io/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -131,7 +166,25 @@
 
 
 
-</head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139884627-1"></script>
+  <link rel="stylesheet" href="/dist/css/share.min.css">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-139884627-1');
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?9d4a3700a4e6444240fe13acb69c87fc";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</mate></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -142,7 +195,9 @@
 
   <div class="container sidebar-position-left 
   page-home">
+
     <div class="headband"></div>
+    
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -151,13 +206,15 @@
 
     <div class="custom-logo-site-title">
       <a href="/yyyeuing.github.io/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
+        <!-- <span class="logo-line-before"><i></i></span> -->
+        <!-- <img width="150px" height="auto" src="https://site-1258928558.cos.ap-guangzhou.myqcloud.com/logo-bestzuo.png"/> -->
         <span class="site-title">养生少女不熬叶</span>
-        <span class="logo-line-after"><i></i></span>
+	     <!-- <img width="150px" height="auto" src="/images/site-logo.png" /> -->
+        <!-- <span class="logo-line-after"><i></i></span> -->
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -187,42 +244,42 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/yyyeuing.github.io/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/yyyeuing.github.io/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/yyyeuing.github.io/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/yyyeuing.github.io/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-top">
+          <a href="/yyyeuing.github.io/top/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-signal"></i> <br>
+            
+            热门
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-links">
+          <a href="/yyyeuing.github.io/links/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user-plus"></i> <br>
+            
+            友链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-messageboard">
+          <a href="/yyyeuing.github.io/messageboard" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-comment"></i> <br>
+            
+            留言
           </a>
         </li>
       
@@ -276,6 +333,456 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+.glyphicon-chevron-left:before{
+	/*content: "<"*/
+	/*background: url(https://site-1258928558.cos.ap-guangzhou.myqcloud.com/left-icon-slides.png);*/
+}
+.glyphicon-chevron-right:before{
+	/*content: ">"*/
+}
+
+@media (max-width: 767px){
+	.rights{
+		display: none;
+	}
+	.carousel{
+		display: none;
+	}
+	.slide{
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.tag-cloud{
+		display: none;
+	}
+}
+
+.carousel{
+	width: 65%;
+	height: 100%;
+	position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /*width: 15%;*/
+  /*opacity: 0.5;*/
+  /*filter: alpha(opacity=50);*/
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+/*.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  background: url('https://site-1258928558.cos.ap-guangzhou.myqcloud.com/icon-slides.png');
+  background-position-x: -83px; 
+  left: 9px;
+}*/
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left:hover {
+  background: url('https://site-1258928558.cos.ap-guangzhou.myqcloud.com/icon-slides.png');
+  left: 9px;
+}
+/*.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  background: url('https://site-1258928558.cos.ap-guangzhou.myqcloud.com/icon-slides.png');
+  background-position-x: -125px; 
+  right: 0px;
+}*/
+
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right:hover {
+  background: url('https://site-1258928558.cos.ap-guangzhou.myqcloud.com/icon-slides.png');
+  background-position-x: -41px; 
+  right: 0px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  text-indent: -999px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  background-color: rgba(0,0,0,.24);
+}
+.carousel-indicators .active {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 60px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    /*margin-right: -10px;*/
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: 0px;
+  }
+}
+</style>
+<div height="320px" width="100%" style="border: 0px; overflow: hidden; border-radius: 10px;" scrolling="no">
+			
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
+		<!-- 轮播（Carousel）指标 -->
+		<ol class="carousel-indicators">
+		
+		
+
+			<li data-target="#myCarousel" data-slide-to="0"></li>
+			
+
+		
+
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			
+
+		
+
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			
+
+		
+
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			
+
+		
+
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+			
+
+		
+
+			<li data-target="#myCarousel" data-slide-to="5"></li>
+			
+
+		
+
+			<li data-target="#myCarousel" data-slide-to="6"></li>
+			
+
+		
+		</ol>
+		<!-- 轮播（Carousel）项目 -->
+		<div class="carousel-inner" style="height: 280px; border-radius: 10px; width: 100%;">
+
+		
+		 
+		
+	    	
+				<a class="item active" href="/yyyeuing.github.io/messageboard/" target="_blank" style="height: 100%;">
+					<img class="nofancybox" src="https://site-1258928558.cos.ap-guangzhou.myqcloud.com/blog/blog-welcome.png" style="width: 100%; height: 100%">
+				</a>
+				
+				
+
+		
+		
+	    	
+					<a class="item" href="https://bestzuo.cn/posts/blog-establish.html" target="_blank" style="height: 100%;">
+						<img class="nofancybox" src="https://site-1258928558.cos.ap-guangzhou.myqcloud.com/blog/blog-polish.png" style="width: 100%; height: 100%;">
+					</a>
+			
+
+		
+		
+	    	
+					<a class="item" href="https://github.com/996icu/996.ICU" target="_blank" style="height: 100%;">
+						<img class="nofancybox" src="https://blogimage-1258928558.cos.ap-guangzhou.myqcloud.com/%E8%BD%AE%E6%92%AD%E5%9B%BE/996.png" style="width: 100%; height: 100%;">
+					</a>
+			
+
+		
+		
+	    	
+					<a class="item" href="/yyyeuing.github.io/tags/JVM/" target="_blank" style="height: 100%;">
+						<img class="nofancybox" src="https://blogimage-1258928558.cos.ap-guangzhou.myqcloud.com/%E8%BD%AE%E6%92%AD%E5%9B%BE/JVM.png" style="width: 100%; height: 100%;">
+					</a>
+			
+
+		
+		
+	    	
+					<a class="item" href="/yyyeuing.github.io/posts/258aee07.html" target="_blank" style="height: 100%;">
+						<img class="nofancybox" src="https://blogimage-1258928558.cos.ap-guangzhou.myqcloud.com/%E8%BD%AE%E6%92%AD%E5%9B%BE/%E5%A4%9A%E7%BA%BF%E7%A8%8B.png" style="width: 100%; height: 100%;">
+					</a>
+			
+
+		
+		
+	    	
+					<a class="item" href="/yyyeuing.github.io/tags/博客/" target="_blank" style="height: 100%;">
+						<img class="nofancybox" src="https://blogimage-1258928558.cos.ap-guangzhou.myqcloud.com/%E8%BD%AE%E6%92%AD%E5%9B%BE/hexo.png" style="width: 100%; height: 100%;">
+					</a>
+			
+
+		
+		
+	    	
+					<a class="item" href="https://promotion.aliyun.com/ntms/act/campus2018.html" target="_blank" style="height: 100%;">
+						<img class="nofancybox" src="https://blogimage-1258928558.cos.ap-guangzhou.myqcloud.com/%E8%BD%AE%E6%92%AD%E5%9B%BE/19010107.jpg" style="width: 100%; height: 100%;">
+					</a>
+			
+
+		
+
+		</div>
+		<!-- 轮播（Carousel）导航 -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+		</a>
+	</div>
+
+	<div class="rights" style="width: 30%; height: 300px; margin-right: 0px;margin-left: 20px;float: left;">
+	
+	   <!-- 天气插件 -->
+       <iframe class="blog-weather" width="420" scrolling="no" height="15%" frameborder="0" allowtransparency="true" src="https://i.tianqi.com/index.php?c=code&id=12&icon=1&py=wuhan&num=2&site=12"></iframe>
+
+	   <!-- 关于博主 -->
+	   <a href="/about/" target="_blank" style="text-align: right; width: 100%;"><img class="blog-about nofancybox" src="https://site-1258928558.cos.ap-guangzhou.myqcloud.com/about.png" width="100%"></a>
+	   <div style="height: 9px;"></div>
+
+	   <!-- 推荐阅读 -->
+	   <a href="/books/" target="_blank" style="width: 100%; text-align: right;"><img class="blog-read nofancybox" src="https://site-1258928558.cos.ap-guangzhou.myqcloud.com/read.png" width="100%"></a>
+	   <div style="height: 9px;"></div>
+	
+	   <!-- 光影留念 -->
+	  <a href="/photos/" target="_blank" style="width: 100%; text-align: right;"><img class="blog-photo nofancybox" src="https://site-1258928558.cos.ap-guangzhou.myqcloud.com/photo.png" width="100%"></a>
+	  <div style="height: 9px;"></div>
+
+	  <!-- 留下脚印 -->
+	  <a href="/messageboard/"><img class="blog-messageboard nofancybox" src="https://site-1258928558.cos.ap-guangzhou.myqcloud.com/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7_meitu_5.png"></a>
+    </div>
+
+<div class="tag-cloud">
+  <div class="tag-cloud-tags" id="tags">
+    <a href="/yyyeuing.github.io/tags/休闲/" style="font-size: 14px; color: #fff">休闲</a> <a href="/yyyeuing.github.io/tags/动漫/" style="font-size: 14px; color: #fff">动漫</a>
+  </div>
+</div>
+<br>
+
+<script type="text/javascript">
+   var alltags=document.getElementById('tags');
+   var tags=alltags.getElementsByTagName('a');
+
+   for (var i = tags.length - 1; i >= 0; i--) {
+     var r=Math.floor(Math.random()*75+130);
+     var g=Math.floor(Math.random()*75+100);
+     var b=Math.floor(Math.random()*75+80);
+     tags[i].style.background = "rgb("+r+","+g+","+b+")";
+   }
+</script>
+
+<style type="text/css">
+	div#posts.posts-expand .tag-cloud a{
+   		background-color: #f5f7f1;
+   		border-radius: 6px;
+   		padding-left: 10px;
+   		padding-right: 10px;
+   		margin-top: 18px;
+ 	}
+
+ 	.tag-cloud a{
+   		background-color: #f5f7f1;
+   		border-radius: 4px;
+   		padding-right: 5px;
+   		padding-left: 5px;
+   		margin-right: 5px;
+   		margin-left: 0px;
+   		margin-top: 8px;
+   		margin-bottom: 0px;
+ 	}
+
+ 	.tag-cloud a:before{
+       content: "🔖";
+ 	}
+
+ 	.tag-cloud-tags{
+   	   text-align: left;
+   	   counter-reset: tags;
+ 	}
+</style>
+
   <section id="posts" class="posts-expand">
     
       
@@ -296,7 +803,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="养生少女不熬叶">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/yyyeuing.github.io/images/avatar.jpg">
+      <meta itemprop="image" content="/yyyeuing.github.io/images/touxiang.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -308,22 +815,23 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/yyyeuing.github.io/2020/02/13/dongman/" itemprop="url">那些年一起看过的动漫</a></h1>
+                <a class="post-title-link" href="/yyyeuing.github.io/2020/02/13/dongman/" itemprop="url">那些年一起看过的动漫</a></h2>
         
 
         <div class="post-meta">
+      <!-- 增加置顶功能 -->
+	    
           <span class="post-time">
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <!-- 创建时间图标颜色 -->
+                <font color="blue"><i class="fa fa-calendar"></i></font>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
-              
               <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-13T22:59:41+08:00">
-                2020-02-13
+                <font color="blue">2020-02-13</font>
               </time>
             
 
@@ -336,23 +844,44 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+          
+
+          
+          
+             <span id="/yyyeuing.github.io/2020/02/13/dongman/" class="leancloud_visitors" data-flag-title="那些年一起看过的动漫">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <!-- 阅读量图标颜色 -->
+                 <font color="red"><i class="fa fa-eye"></i></font>
+               </span>
+               
+                 <font color="red"><span class="leancloud-visitors-count"></span>
+                 <span>℃</span></font>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
+                   <!-- 字数统计图标颜色 -->
+                  <font color="green"><i class="fa fa-file-word-o"></i></font>
                 </span>
-                <a href="/yyyeuing.github.io/2020/02/13/dongman/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/yyyeuing.github.io/2020/02/13/dongman/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
+                
+                <font color="green"><span title="字数">
+                  1,152
+                </span></font>
+              
 
-          
-          
+              
 
-          
-
+              
+            </div>
           
 
           
@@ -383,9 +912,10 @@
         
       
     </p></div>
-<div>  
-      
-</div>
+
+    
+
+
     
     
     
@@ -395,6 +925,10 @@
     
 
     
+    
+    	<div>
+	   
+        </div>
 
     <footer class="post-footer">
       
@@ -441,6 +975,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -451,7 +987,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/yyyeuing.github.io/images/avatar.jpg" alt="养生少女不熬叶">
+              <img class="site-author-image" itemprop="image" src="/yyyeuing.github.io/images/touxiang.jpeg" alt="养生少女不熬叶">
             
               <p class="site-author-name" itemprop="name">养生少女不熬叶</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -486,14 +1022,33 @@
           </nav>
 
           
+            <div class="feed-link motion-element">
+              <a href="https://bestzuo.cn/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
           
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/yyyeuing" target="_blank" title="GitHub">
+                    <a href="https://github.com/Sanarous" target="_blank" title="Github">
                       
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                        <i class="fa fa-fw fa-github"></i>Github</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://stackoverflow.com/" target="_blank" title="StackOverflow">
+                      
+                        <i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
                   </span>
                 
             </div>
@@ -501,53 +1056,74 @@
 
           
           
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/yyyeuing.github.io/images/cc-by-nc-sa.svg" alt="Creative Commons">
+              </a>
+            </div>
+          
 
           
           
-
-          
-
         </div>
       </section>
 
       
 
       
-
     </div>
   </aside>
 
 
         
       </div>
-    </main>
+    </div></main>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2019 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <font color="red"><i class="fa fa-heartbeat" aria-hidden="true"></i></font>
   </span>
   <span class="author" itemprop="copyrightHolder">养生少女不熬叶</span>
+  &nbsp;<a href="http://www.miitbeian.gov.cn/"><font size="1px"><font color="#222">鄂ICP备19008535号</font></font></a>
 
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
+<div style="width:300px;margin:0 auto; padding:0 0;">
+   <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102003147" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://blogimage-1258928558.cos.ap-guangzhou.myqcloud.com/beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" style="float:left;width:10%;height:auto;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#555;letter-spacing:0px"><font size="1px"><font color="#222">鄂公网安备 42011102003147号</font></font></p></a>
+</div>
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+  <script async src="/js/src/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
@@ -562,6 +1138,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -642,13 +1220,6 @@
   
   
 
-
-  <script type="text/javascript" src="/yyyeuing.github.io/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/yyyeuing.github.io/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
   
 
   
@@ -688,28 +1259,6 @@
 
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'TlHyH7kaFXEAGzEwVziPBbs4-gzGzoHsz',
-        appKey: 'SCnr2aoH8bkCMJXE541HVY7G',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
 
@@ -1039,17 +1588,180 @@
   
 
   
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <!-- <script src="https://dp2px.com/demo/av-min.js"></script> -->
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
   
 
   
 
   
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
 
   
 
+  
+
+  <script type="text/javascript" src="/js/src/linkcard.js"></script>
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script src="/dist/js/social-share.min.js"></script>
 </body>
 </html>
