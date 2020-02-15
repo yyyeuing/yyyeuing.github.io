@@ -158,7 +158,7 @@ body {
   background: #fff;
   color: #555;
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "STHeiti", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -1215,7 +1215,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6fff4b;
+  background: #0ab3ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2524,7 +2524,7 @@ a:hover {
   background: #fff;
 }
 .post-block {
-  margin-bottom: 28px;
+  mar78gin-bottom: 28px;
 }
 .post-body {
   color: #000;
@@ -2903,4 +2903,34 @@ pre,
 }
 .links-of-blogroll-item a:hover {
   color: #00ced1;
+}
+.sidebar {
+  background: url("https://s2.ax1x.com/2020/02/15/1xJHLd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sidebar p,
+.sidebar span,
+.sidebar a {
+  color: #fff;
+}
+body {
+  background: url("https://s2.ax1x.com/2020/02/14/1vJBh8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.content {
+  border-radius: 10px;
+  margin-top: 60px;
+  background: #fff none repeat scroll !important;
 }
