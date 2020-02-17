@@ -1215,7 +1215,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #0e7ef4;
+  background: #6affe4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2558,6 +2558,13 @@ hr {
 }
 body {
   background: #fffafa none repeat scroll !important;
+  line-height: 1.618;
+  margin: 0px;
+  padding: 0px;
+  font-family: "微软雅黑", "黑体", "宋体";
+  font-size: 14px;
+  height: 36px;
+  color: #000;
 }
 .header {
   background-image: linear-gradient(90deg, #2ae0c8 0, #a2e1d4 10%, #acf6ef 20%, #cbf5fb 32%, #bdf3d4 45%, #e6e2c3 57%, #e3c887 69%, #fad8be 83%, #fbb8ac 94%, #fe6673 100%) !important;
